@@ -1,0 +1,41 @@
+{
+  "name": "ramka2-client",
+  "version": "0.0.1",
+  "description": "Front-end client for ramka2 project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qaraluch/ramka2-client.git"
+  },
+  "keywords": [],
+  "author": "qaraluch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qaraluch/ramka2-client/issues"
+  },
+  "homepage": "https://github.com/qaraluch/ramka2-client#readme",
+  "dependencies": {
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "postcss": "^8.1.10",
+    "postcss-import": "^13.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.0",
+    "tailwindcss": "^2.0.1"
+  }
+}
