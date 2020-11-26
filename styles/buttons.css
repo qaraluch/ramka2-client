@@ -1,0 +1,16 @@
+.btn {
+  @apply inline-block;
+  @apply px-4;
+  @apply py-3;
+  @apply rounded-lg;
+  @apply shadow-lg;
+  @apply bg-gray-500;
+  @apply outline-none;
+  @apply text-sm;
+  @apply text-cyan-500;
+  @apply uppercase;
+  @apply tracking-wider;
+  @apply font-semibold;
+  @apply text-base;
+}
+

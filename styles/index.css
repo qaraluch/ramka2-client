@@ -1,7 +1,5 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "./layout.css";
+@import "./buttons.css";
 @import "tailwindcss/utilities";
-
-body {
-  @apply p-12 bg-blue-500;
-}

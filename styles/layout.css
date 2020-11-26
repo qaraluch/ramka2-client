@@ -1,0 +1,4 @@
+body {
+  @apply p-2;
+  @apply bg-gray-200;
+}
