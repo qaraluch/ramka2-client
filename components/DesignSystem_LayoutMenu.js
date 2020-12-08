@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ColorBox from "../components/DesignSystem_ColorBox";
 
 export default function DesignSystem_LayoutMenu() {
   return (
@@ -30,6 +31,17 @@ export default function DesignSystem_LayoutMenu() {
             >
               pelnyWidok
             </Link>
+          </div>
+          <h1 className="mt-10 text-lg font-bold leading-normal text-black">
+            Color palette:
+          </h1>
+
+          <div className="flex justify-center mt-10">
+            <ColorBox hexValue="#1E2732" colorName="gunmetal" />
+            <ColorBox hexValue="#EAEAEC" colorName="platinium" />
+            <ColorBox hexValue="#02769A" colorName="cgblue" />
+            <ColorBox hexValue="#FCA867" colorName="sandybrown" />
+            <ColorBox hexValue="#67E8F9" colorName="cyan-300" />
           </div>
         </div>
       </div>
