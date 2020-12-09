@@ -9,8 +9,7 @@ export default function DesignSystem_LayoutMenu() {
           RAMKA 2 - DESIGN SYSTEM PAGE
         </h1>
       </div>
-      <div className="w-auto h-full h-screen p-8 mt-4 antialiased bg-white">
-        {/* menu */}
+      <div className="w-auto h-auto p-8 mt-4 antialiased bg-white">
         <div className="flex flex-col items-center justify-center p-12">
           <h1 className="text-lg font-bold leading-normal text-black">
             List of components:
@@ -32,10 +31,10 @@ export default function DesignSystem_LayoutMenu() {
               pelnyWidok
             </Link>
           </div>
+
           <h1 className="mt-10 text-lg font-bold leading-normal text-black">
             Color palette:
           </h1>
-
           <div className="flex justify-center mt-10">
             <ColorBox hexValue="#1E2732" colorName="gunmetal" />
             <ColorBox hexValue="#EAEAEC" colorName="platinium" />
@@ -43,6 +42,22 @@ export default function DesignSystem_LayoutMenu() {
             <ColorBox hexValue="#FCA867" colorName="sandybrown" />
             <ColorBox hexValue="#67E8F9" colorName="cyan-300" />
           </div>
+
+          <h1 className="mt-10 text-lg font-bold leading-normal text-black">
+            Fonts families loaded:
+          </h1>
+          <h1 className="mt-6 text-cgblue">
+            Sans font (Roboto) - h1 header example by Tailwind's font-sans
+          </h1>
+          <p className="mt-6 font-mono text-cgblue">
+            Mono font (Inconsolata)- p paragraph example by Tailwind's font-mono
+          </p>
+          <h1 className="mt-6 font-serif text-cgblue">
+            Serif font - h1 header example by default Tailwind
+          </h1>
+          <h1 className="mt-6 font-exo text-cgblue">
+            Exo font - h1 header example by Tailwind; use by font-exo
+          </h1>
         </div>
       </div>
     </>

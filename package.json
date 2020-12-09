@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/qaraluch/ramka2-client#readme",
   "dependencies": {
+    "fontsource-exo": "^3.0.5",
+    "fontsource-inconsolata": "^3.0.5",
+    "fontsource-open-sans": "^3.0.9",
+    "fontsource-roboto": "^3.0.3",
     "next": "^10.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

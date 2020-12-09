@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: [],
@@ -7,6 +8,11 @@ module.exports = {
     extend: {
       spacing: {
         miniaturka: "150px",
+      },
+      fontFamily: {
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+        mono: ["Inconsolata", ...defaultTheme.fontFamily.mono],
+        exo: ["Exo", "sans-serif"],
       },
     },
     colors: {
