@@ -5,7 +5,7 @@ export default function DesignSystem_LayoutDisplay({ children, title }) {
     <>
       <div className="flex flex-wrap items-center justify-between w-full px-3 py-3 mt-0 text-gray-300">
         <div className="w-1/3 ">
-          <Link href="/" className="">
+          <Link href="/design-system" className="">
             &lt; DESIGN SYSTEM MAIN MENU
           </Link>
         </div>
