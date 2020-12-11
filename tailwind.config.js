@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       spacing: {
         miniaturka: "150px",
+        logopositionx: "5.25rem",
+        logopositiony: "15.5rem",
       },
       fontFamily: {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],
@@ -22,6 +24,7 @@ module.exports = {
       platinium: "#EAEAEC",
       cgblue: "#02769A",
       sandybrown: "#FCA867",
+      logobg: "#22252C",
       cyan: colors.cyan,
       gray: colors.gray,
     },

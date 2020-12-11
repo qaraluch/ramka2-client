@@ -3,3 +3,12 @@
 @import "./layout.css";
 @import "./buttons.css";
 @import "tailwindcss/utilities";
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 2px 5px #02769A; /* cgblue */
+  }
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}
