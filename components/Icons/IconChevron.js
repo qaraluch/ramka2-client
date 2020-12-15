@@ -1,7 +1,8 @@
-function ChevronRightIcon() {
+function IconChevronRight({ color = "black", size = "6" }) {
+  const classNameFinal = `w-${size} h-${size} text-${color}`;
   return (
     <svg
-      className="w-6 h-6 text-black"
+      className={classNameFinal}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
@@ -17,10 +18,11 @@ function ChevronRightIcon() {
   );
 }
 
-function ChevronLeftIcon() {
+function IconChevronLeft({ color = "black", size = "6" }) {
+  const classNameFinal = `w-${size} h-${size} text-${color}`;
   return (
     <svg
-      className="w-6 h-6 text-black"
+      className={classNameFinal}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
@@ -36,10 +38,11 @@ function ChevronLeftIcon() {
   );
 }
 
-function ChevronDownIcon() {
+function IconChevronDown({ color = "black", size = "6" }) {
+  const classNameFinal = `w-${size} h-${size} text-${color}`;
   return (
     <svg
-      className="w-6 h-6 text-black"
+      className={classNameFinal}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
@@ -55,10 +58,11 @@ function ChevronDownIcon() {
   );
 }
 
-function ChevronUpIcon() {
+function IconChevronUp({ color = "black", size = "6" }) {
+  const classNameFinal = `w-${size} h-${size} text-${color}`;
   return (
     <svg
-      className="w-6 h-6 text-black"
+      className={classNameFinal}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
@@ -74,4 +78,4 @@ function ChevronUpIcon() {
   );
 }
 
-export { ChevronUpIcon, ChevronRightIcon, ChevronDownIcon, ChevronLeftIcon };
+export { IconChevronUp, IconChevronDown, IconChevronLeft, IconChevronRight };

@@ -1,16 +1,18 @@
 import Link from "next/link";
 import ColorBox from "../components/DesignSystem_ColorBox";
-import PhotographIcon from "../components/Icons/PhotographIcon";
-import CollectionIcon from "../components/Icons/CollectionIcon";
-import ColorSwatchIcon from "../components/Icons/ColorSwatchIcon";
-import XIcon from "../components/Icons/XIcon";
-import InformationCircleIcon from "../components/Icons/InformationCircleIcon";
+import IconPhotograph from "../components/Icons/IconPhotograph";
+import IconCollection from "../components/Icons/IconCollection";
+import IconColorSwatch from "../components/Icons/IconColorSwatch";
+import IconX from "../components/Icons/IconX";
+import IconLogo from "../components/Icons/IconLogo";
+import IconInformationCircle from "../components/Icons/IconInformationCircle";
+import ButtonListOfComponentsDesignSystem from "../components/Buttons/ButtonListOfComponentsDesignSystem";
 import {
-  ChevronUpIcon,
-  ChevronRightIcon,
-  ChevronDownIcon,
-  ChevronLeftIcon,
-} from "../components/Icons/ChevronIcons";
+  IconChevronUp,
+  IconChevronRight,
+  IconChevronDown,
+  IconChevronLeft,
+} from "../components/Icons/IconChevron";
 
 export default function DesignSystem_LayoutMenu() {
   return (
@@ -19,7 +21,7 @@ export default function DesignSystem_LayoutMenu() {
         <div className="w-1/3">
           <Link href="/">
             <a className="flex text-gray-700 hover:text-gray-200">
-              <ChevronLeftIcon />
+              <IconChevronLeft />
               Home Page
             </a>
           </Link>
@@ -32,25 +34,35 @@ export default function DesignSystem_LayoutMenu() {
         <div className="w-1/3"></div>
       </div>
       <div className="w-auto h-auto p-8 mt-4 bg-white">
-        <div className="flex flex-col items-center justify-center p-12">
+        <div className="flex flex-col items-center p-12">
           <h1 className="text-lg font-bold leading-normal text-black">
             List of components:
           </h1>
-          <div className="flex flex-col p-6 mt-10 bg-white border rounded w-90 ">
-            <Link href="/design-system/miniaturka">
-              <a className="px-4 py-2 text-gray-200 rounded hover:text-gray-800 text-normal">
-                miniaturka
-              </a>
-            </Link>
-            <div className="py-2">
-              <hr></hr>
-            </div>
-            <Link href="/design-system/pelnywidok">
-              <a className="px-4 py-2 text-gray-200 rounded hover:text-gray-800 text-normal">
-                pelnyWidok
-              </a>
-            </Link>
-          </div>
+
+          <ButtonListOfComponentsDesignSystem
+            name="buttons"
+            href="/design-system/buttons"
+          />
+
+          <ButtonListOfComponentsDesignSystem
+            name="infoMetadanych"
+            href="/design-system/infometadanych"
+          />
+
+          <ButtonListOfComponentsDesignSystem
+            name="pelnyWidok"
+            href="/design-system/pelnywidok"
+          />
+
+          <ButtonListOfComponentsDesignSystem
+            name="mozajka"
+            href="/design-system/mozajka"
+          />
+
+          <ButtonListOfComponentsDesignSystem
+            name="miniaturka"
+            href="/design-system/miniaturka"
+          />
 
           <h1 className="mt-10 text-lg font-bold leading-normal text-black">
             Color palette:
@@ -85,65 +97,81 @@ export default function DesignSystem_LayoutMenu() {
           </h1>
           <div className="flex flex-col">
             <div className="flex mt-5">
-              <PhotographIcon />
+              <IconLogo color="cgblue" size="8" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/PhotographIcon.js
+                - components/Icons/IconLogo.js; default props: color=black
+                size=8
               </p>
             </div>
 
             <div className="flex mt-5">
-              <CollectionIcon />
+              <IconPhotograph color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/CollectionIcon.js
+                - components/Icons/IconPhotograph.js; default props: color=black
+                size=6
               </p>
             </div>
 
             <div className="flex mt-5">
-              <ColorSwatchIcon />
+              <IconCollection color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/ColorSwatchIcon.js
+                - components/Icons/IconCollection.js; default props: color=black
+                size=6
               </p>
             </div>
 
             <div className="flex mt-5">
-              <XIcon />
+              <IconColorSwatch color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/XIcon.js
+                - components/Icons/IconColorSwatch.js; default props:
+                color=black size=6
               </p>
             </div>
 
             <div className="flex mt-5">
-              <ChevronLeftIcon />
+              <IconX color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/ChevronIcons.js as ChevronLeftIcon component
+                - components/Icons/IconX.js; default props: color=black size=6
               </p>
             </div>
 
             <div className="flex mt-5">
-              <ChevronRightIcon />
+              <IconChevronLeft color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/ChevronIcons.js as ChevronRightIcon component
+                - components/Icons/IconChevronLeft.js; default props:
+                color=black size=6
               </p>
             </div>
 
             <div className="flex mt-5">
-              <ChevronUpIcon />
+              <IconChevronRight color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/ChevronIcons.js as ChevronUpIcon component
+                - components/Icons/IconChevronRight.js; default props:
+                color=black size=6
               </p>
             </div>
 
             <div className="flex mt-5">
-              <ChevronDownIcon />
+              <IconChevronUp color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/ChevronIcons.js as ChevronDownIcon component
+                - components/Icons/IconChevronUp.js; default props: color=black
+                size=6
               </p>
             </div>
 
             <div className="flex mt-5">
-              <InformationCircleIcon />
+              <IconChevronDown color="cgblue" size="6" />
               <p className="ml-2 font-mono text-base font-normal text-gray-500">
-                - components/Icons/InformationCircleIcon.js
+                - components/Icons/IconChevronDown.js; default props:
+                color=black size=6
+              </p>
+            </div>
+
+            <div className="flex mt-5">
+              <IconInformationCircle color="cgblue" size="6" />
+              <p className="ml-2 font-mono text-base font-normal text-gray-500">
+                - components/Icons/IconInformationCircle.js; default props:
+                color=black size=6
               </p>
             </div>
           </div>

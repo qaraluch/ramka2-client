@@ -1,7 +1,8 @@
-export default function ColorSwatchIcon() {
+export default function IconColorSwatch({ color = "black", size = "6" }) {
+  const classNameFinal = `w-${size} h-${size} text-${color}`;
   return (
     <svg
-      className="w-6 h-6 text-cgblue"
+      className={classNameFinal}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"

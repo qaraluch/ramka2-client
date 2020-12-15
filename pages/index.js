@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ColorSwatchIcon from "../components/Icons/ColorSwatchIcon";
-import CollectionIcon from "../components/Icons/CollectionIcon";
+import IconColorSwatch from "../components/Icons/IconColorSwatch";
+import IconCollection from "../components/Icons/IconCollection";
 
 export default function HomePage() {
   return (
@@ -29,7 +29,7 @@ export default function HomePage() {
           <button className="py-5 pl-4 font-bold border-2 rounded-lg shadow-md border-cgblue w-60 bg-platinium hover:text-white hover:bg-sandybrown hover:border-sandybrown text-cgblue font-exo border-gunmetal">
             <Link href="/collections/all">
               <div className="flex">
-                <CollectionIcon />
+                <IconCollection color="cgblue" />
                 <span className="ml-4 tracking-wider">All</span>
               </div>
             </Link>
@@ -37,7 +37,7 @@ export default function HomePage() {
           <button className="py-5 pl-4 mt-2 font-bold border-2 rounded-lg shadow-md border-cgblue w-60 bg-platinium hover:text-white hover:bg-sandybrown hover:border-sandybrown text-cgblue font-exo border-gunmetal">
             <Link href="/design-system">
               <div className="flex">
-                <ColorSwatchIcon />
+                <IconColorSwatch color="cgblue" />
                 <span className="ml-4 tracking-wider">Design System</span>
               </div>
             </Link>
