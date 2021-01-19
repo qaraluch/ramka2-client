@@ -1,4 +1,4 @@
-export default function DesignSystem_ColorBox({ colorName, hexValue }) {
+export default function DesignSystemColorBox({ colorName, hexValue }) {
   const dynamicClassName = `h-24 p-24 m-2 border-gray-100 border-2 bg-${colorName}`;
   return (
     <div className="flex flex-col items-center">

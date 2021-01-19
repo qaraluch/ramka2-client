@@ -1,4 +1,4 @@
-import DesignSystem_LayoutDisplay from "../../components/DesignSystem_LayoutDisplay";
+import DesignSystemLayoutDisplay from "../../components/DesignSystem/DesignSystemLayoutDisplay";
 import ButtonListOfComponentsDesignSystem from "../../components/Buttons/ButtonListOfComponentsDesignSystem";
 import { IconChevronLeft } from "../../components/Icons/IconChevron";
 import ButtonX from "../../components/Buttons/ButtonX";
@@ -9,10 +9,10 @@ import {
 import ButtonInfoMetadanych from "../../components/Buttons/ButtonInfoMetadanych";
 import ButtonLogo from "../../components/Buttons/ButtonLogo";
 
-export default function DesignSystem_Buttons() {
+export default function DesignSystemButtons() {
   return (
     <>
-      <DesignSystem_LayoutDisplay title="Buttons">
+      <DesignSystemLayoutDisplay title="Buttons">
         <div className="flex flex-col">
           <div className="flex items-center mt-5">
             <ButtonListOfComponentsDesignSystem />
@@ -80,7 +80,7 @@ export default function DesignSystem_Buttons() {
             </p>
           </div>
         </div>
-      </DesignSystem_LayoutDisplay>
+      </DesignSystemLayoutDisplay>
     </>
   );
 }

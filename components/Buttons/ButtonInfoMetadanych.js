@@ -6,10 +6,11 @@ export default function ButtonInfoMetadanych({
   href = "/",
   color = "black",
   colorHover = "gray-200",
+  query = {},
 }) {
   const [isHover, setIsHover] = React.useState(false);
   return (
-    <Link href={href}>
+    <Link href={{ pathname: href, query }}>
       <button
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}

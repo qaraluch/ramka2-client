@@ -7,9 +7,11 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        pelnywidok: "60%",
         miniaturka: "150px",
         logopositionx: "5.25rem",
         logopositiony: "15.5rem",
+        128: "32rem",
       },
       fontFamily: {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],

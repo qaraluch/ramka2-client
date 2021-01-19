@@ -1,9 +1,9 @@
-import DesignSystem_LayoutMenu from "../components/DesignSystem_LayoutMenu";
+import DesignSystemLayoutMenu from "../components/DesignSystem/DesignSystemLayoutMenu";
 
 export default function DesignSystem() {
   return (
     <>
-      <DesignSystem_LayoutMenu />
+      <DesignSystemLayoutMenu />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function DesignSystem_LayoutDisplay({ children, title }) {
+export default function DesignSystemLayoutDisplay({ children, title }) {
   return (
     <>
       <div className="flex flex-wrap items-center justify-between px-3 py-3 mt-0 text-gray-300">

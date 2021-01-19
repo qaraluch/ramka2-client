@@ -1,20 +1,20 @@
 import Link from "next/link";
-import ColorBox from "../components/DesignSystem_ColorBox";
-import IconPhotograph from "../components/Icons/IconPhotograph";
-import IconCollection from "../components/Icons/IconCollection";
-import IconColorSwatch from "../components/Icons/IconColorSwatch";
-import IconX from "../components/Icons/IconX";
-import IconLogo from "../components/Icons/IconLogo";
-import IconInformationCircle from "../components/Icons/IconInformationCircle";
-import ButtonListOfComponentsDesignSystem from "../components/Buttons/ButtonListOfComponentsDesignSystem";
+import ColorBox from "./DesignSystemColorBox";
+import IconPhotograph from "../Icons/IconPhotograph";
+import IconCollection from "../Icons/IconCollection";
+import IconColorSwatch from "../Icons/IconColorSwatch";
+import IconX from "../Icons/IconX";
+import IconLogo from "../Icons/IconLogo";
+import IconInformationCircle from "../Icons/IconInformationCircle";
+import ButtonListOfComponentsDesignSystem from "../Buttons/ButtonListOfComponentsDesignSystem";
 import {
   IconChevronUp,
   IconChevronRight,
   IconChevronDown,
   IconChevronLeft,
-} from "../components/Icons/IconChevron";
+} from "../Icons/IconChevron";
 
-export default function DesignSystem_LayoutMenu() {
+export default function DesignSystemLayoutMenu() {
   return (
     <>
       <div className="flex items-center justify-between w-full p-4 bg-white rounded shadow">
